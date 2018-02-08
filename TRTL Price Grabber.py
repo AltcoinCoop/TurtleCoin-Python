@@ -19,23 +19,20 @@ def get_price_tradesatoshi():
     print("-------------------")
     print("TradeSatoshi Stats:")
     print("-------------------")
-    print("Last   ",last,"sats")
     print("High   ",high,"sats")
+    print("Last   ",last,"sats")
     print("Low    ",low,"sats")
 
 def get_price_tradeogre():
     r = requests.get(url='https://tradeogre.com/api/v1/ticker/BTC-TRTL')
-    volume = (r.json()['volume'])
     last = (r.json()['price'])
     high = (r.json()['high'])
     low = (r.json()['low'])
 
-    volume = float(volume)
     high = float(high) * 100000000
     low = float(low) * 100000000
     last = float(last) * 100000000
 
-    volume = round(volume,2)
     last = round(last)
     high = round(high)
     low = round(low)
@@ -43,9 +40,8 @@ def get_price_tradeogre():
     print("\n----------------")
     print("TradeOgre Stats:")
     print("----------------")
-    print("Volume ",volume,"BTC")
-    print("Last   ",last,"sats")
     print("High   ",high,"sats")
+    print("Last   ",last,"sats")
     print("Low    ",low,"sats")
     
 

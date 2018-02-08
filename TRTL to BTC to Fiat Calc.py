@@ -54,20 +54,6 @@ print("By TradeOgre's prices you have:")
 print("-------------------------------")
 print("-",valueBitcoinOgre,"BTC")
 print("-",valueGBPOgre,"GBP")
-print("-",valueUSDOgre,"USD")
+print("-",valueUSDOgre,"USD\n")
 
 os.system("pause")
-
-'''
-Idea...
-
-With tradeogre prices you have:
-- n BTC
-- n GBP
-- n USD
-
-With tradesatoshi prices you have:
-- n BTC
-- n GBP
-- n USD
-'''
